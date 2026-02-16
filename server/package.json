@@ -7,7 +7,7 @@
     "dev": "node --watch src/index.js",
     "start": "node src/index.js",
     "build":"npm run migrate",
-    "migrate": "node server/db/migrate.js"
+    "migrate": "node db/migrate.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
