@@ -5,7 +5,9 @@
   "main": "src/index.js",
   "scripts": {
     "dev": "node --watch src/index.js",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "build":"npm run migrate",
+    "migrate": "node server/db/migrate.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
