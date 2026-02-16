@@ -18,7 +18,12 @@ export const pool = new Pool({
   }
 });
 
-const schemaPath = path.join(process.cwd(), "server/db/schema.sql");
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+
+const schemaPath = path.join(__dirname, "schema.sql");
 
 async function migrate() {
   const sql = fs.readFileSync(schemaPath, "utf-8");
