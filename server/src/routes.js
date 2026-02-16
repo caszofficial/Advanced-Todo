@@ -1,5 +1,5 @@
 import express from "express";
-import { pool } from "./db.js";
+import { pool } from "../db/migrate.js";
 import { VALID_STATUSES, isNonEmptyString, clampTitle } from "./validators.js";
 
 export const router = express.Router();
