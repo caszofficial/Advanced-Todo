@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import pg from "pg"
 import dotenv from "dotenv";
+import { fileURLToPath } from "url";
 
 dotenv.config();
 
